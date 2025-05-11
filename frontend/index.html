@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комп'ютерний магазин</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>CompX</h1>
+        <div class="icons">
+            <a href="news.html"><i class="fas fa-newspaper"></i></a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+        </div>
+    </header>
+    <div id="productsContainer"></div>
+    <div class="container">
+        <aside class="sidebar">
+              
+            <h2>Категорії</h2>
+            <ul>
+                <li>Відеокарти</li>
+                <li>Процесори</li>
+                <li>Оперативна пам’ять</li>
+                <li>Накопичувачі</li>
+            </ul>
+        </aside>
+        <main class="products">
+            <div class="chart-container">
+                <select id="chartType">
+                    <option value="pie">Кругова діаграма</option>
+                    <option value="bar">Гістограма</option>
+                    <option value="line">Графік</option>
+                </select>
+                <canvas id="productChart"></canvas>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+      
+</body>
+</html>
